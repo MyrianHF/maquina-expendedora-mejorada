@@ -39,6 +39,13 @@ public class MaquinaExpendedoraMejorada {
     }
 
     /**
+     * Vacía dinero máquina
+     */
+    public int vaciarDineroDeLaMaquina() {
+        return totalDineroAcumulado + balanceClienteActual;
+    }
+    
+    /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
     public void introducirDinero(int cantidadIntroducida) {
