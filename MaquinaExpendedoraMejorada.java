@@ -44,8 +44,14 @@ public class MaquinaExpendedoraMejorada {
     public int vaciarDineroDeLaMaquina() {
         int dineroMaquina;
         dineroMaquina = totalDineroAcumulado + balanceClienteActual;
-        totalDineroAcumulado = 0;
-        balanceClienteActual = 0;
+        if (balanceClienteActual == 0) {
+            totalDineroAcumulado = 0;
+            balanceClienteActual = 0;    
+        }
+        else {
+            System.out.println("No se puede vaciar el depósito de la máquina, el cliente actual ya ha introducido dinero");
+            dineroMaquina = -1;
+        }
         return dineroMaquina;
     }
     
