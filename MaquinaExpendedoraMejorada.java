@@ -105,6 +105,13 @@ public class MaquinaExpendedoraMejorada {
     }
     
     /**
+     * Imprime numero de billetes vendidos
+     */
+    public void imprimeNumeroBilletesVendidos() {
+        System.out.println(billetesVendidos);
+    }
+    
+    /**
      * Cancela la operacion de compra del cliente actual y le
      * devuelve al cliente el dinero que ha introducido hasta el momento
      */
