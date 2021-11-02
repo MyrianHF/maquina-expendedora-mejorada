@@ -92,17 +92,13 @@ public class MaquinaExpendedoraMejorada {
                 balanceClienteActual = balanceClienteActual - precioBillete;
                 // Billete vendido + 1
                 billetesVendidos = billetesVendidos + 1;
-            }
-            else {
-                System.out.println("Necesitas introducir " + (cantidadDeDineroQueFalta) + " euros mas!");
-
-            } 
-        if (tipoMaquina == false) {
-            if (cantidadDeDineroQueFalta <= 0) {        
-                System.out.println("# Descuento de " + (0.10 * precioBillete) + " € para compras en el comercio que tu elijas. ");
-            }
+                if (tipoMaquina == false) {
+                     System.out.println("# Descuento de " + (0.10 * precioBillete) + " € para compras en el comercio que tu elijas. ");
+                }
         }
-
+        else {
+                System.out.println("Necesitas introducir " + (cantidadDeDineroQueFalta) + " euros mas!");
+        } 
     }
     
             /**
