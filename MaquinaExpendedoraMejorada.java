@@ -97,14 +97,12 @@ public class MaquinaExpendedoraMejorada {
                 System.out.println("Necesitas introducir " + (cantidadDeDineroQueFalta) + " euros mas!");
 
             } 
-        if (tipoMaquina == true) {
-            
-        }
-        else {
+        if (tipoMaquina == false) {
             if (cantidadDeDineroQueFalta <= 0) {        
                 System.out.println("# Descuento de " + (0.10 * precioBillete) + " € para compras en el comercio que tu elijas. ");
             }
         }
+
     }
     
             /**
