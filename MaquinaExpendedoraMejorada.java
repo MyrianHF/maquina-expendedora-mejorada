@@ -30,7 +30,7 @@ public class MaquinaExpendedoraMejorada {
         billetesVendidos = 0;
         tipoMaquina = tipoDeLaMaquina;
         numeroMaximoBilletes = maximoBilletes;
-        }
+    }
 
     /**
      * Devuelve el precio del billete
@@ -105,8 +105,9 @@ public class MaquinaExpendedoraMejorada {
                 // Billete vendido + 1
                 billetesVendidos = billetesVendidos + 1;
                 if (tipoMaquina == false) {
-                     if (billetesVendidos % 3 ==0)
+                     if (billetesVendidos % 3 == 0) {
                      System.out.println("# Descuento de " + (0.10 * precioBillete) + " € para compras en el comercio que tu elijas. ");
+                    }
                 }
             }
             else {
